@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css?family=Karla');
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+* {
+    font-family: Karla;
+    box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+header {
+    position: relative;
+}
+
+header .trapezoid {
+    height: 700px;
+    transform: skewY(-4deg);
+    background-color: #00c4e6;
+    background-image: url(data:image/png;base64,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);
+}
+
+header .rectangle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background-color: #00c4e6;
+    background-image: url(data:image/png;base64,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);
+}
+
+/* 네비게이션 바 */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    transition: background-color 0.2s linear; /* 스크롤 되었을 경우, background-color가 일정한 속도로 변화 */
+}
+
+/* 로고와 메뉴들간 거리를 주기 위함 */
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+}
+
+/* 로고 이미지 크기 */
+#logo {
+    width: 28px;
+}
+
+/* 스크롤되었을 경우, nav에 스타일 적용 */
+nav.scrolled {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(85, 77, 86, 0.2);
+}
+
+/* 스크롤되었을 경우, 메뉴 폰트 색상 검정색으로 */
+nav.scrolled li {
+    color: #000;
+}
+
+/* li 기본적으로 줄바꿈 되는 것 제거 */
+li {
+    display: inline-block;
+    color: #fff;
+}
+
+/* 두개의 li가 인접해있을 때 두번째 li 왼쪽에 여백주기 */
+li + li {
+    margin-left: 30px;
+}
+
+/* Cover Image */
+/* 부모 즉, header를 기준으로 top과 left로 정렬 */
+.cover-image {
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    transform: translate(-50%, -50%);/*left 50 top 50만 주면 약간 쏠려잇어서 그거 잡아주는 용도*/    
+    margin: 0 auto;
+}
+
+/* 이미지 위아래로 들어가는 텍스트 */
+.cover-image p {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+/* p에는 기본여백이 있어 제거 */
+p {
+    margin: 0;
+}
+
+/* class가 left인 p는 좌측정렬 */
+p.left {
+    text-align: left;
+}
+
+/* class가 right인 p는 우측정렬 */
+p.right {
+    text-align: right;
+}
+
+/* 프로필 사진 */
+/* 원래 나와야 할 곳에서 위로 -150px 이동 */
+.circle {
+    position: relative;
+    margin-top: -150px;
+}
+
+/* About 섹션 */
+.about {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    color: #707070;
+}
+
+.about .container {
+    width: 50%;
+    display: flex;
+}
+
+.about .contents {
+    margin-right: 3rem;
+}
+
+.about .contents p {
+    font-weight: bold;
+    line-height: 1rem;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.about .contents div {
+    line-height: 2rem;
+    font-size: 1.2rem;
+}
+
+/* 버튼 공통 스타일 */
+button {
+    border: 0;
+    outline: none;
+    padding: 0.5rem 1.5rem;
+    background-color: #00c4e6;
+    border: 2px solid #00c4e6;    
+    color:#fff;
+    font-size: 1.1rem;
+    font-weight: 100;
+    border-radius: 42px;
+    cursor: pointer;
+    box-shadow: 0 4px 9px 0 rgba(26, 66, 93, 0.68);
+    display: block;
+}
+
+/* outline 버튼에만 적용되는 스타일 */
+button.outline {
+    background-color: initial;
+    color: #707070;
+    box-shadow: none;
+}
+
+/* 인접한 버튼의 경우, 다음 버튼 위에 여백주기 */
+button + button {
+    margin-top: 1.5rem;
+}
+
+/* list of works */
+#works {
+    margin-bottom: 10rem;
+}
+
+/* List of works 탭 */
+.tab {
+    position: relative;
+}
+
+.tab ul {
+    text-align: center;
+}
+
+/* 탭 기본 텍스트 색상 */
+.tab li {
+    color: #d5d5d6;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+/* 탭 hover 되었을 때 텍스트 색상 */
+.tab li:hover {
+    color: #2ecfeb;
+}
+
+/* List of works */
+.listofworks {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.listofworks div {
+    width: 33.333%;
+    height: 300px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+.listofworks div:hover {
+    background-color: #00c4e6;
+}
+
+.listofworks div:last-child {
+    background-color: white;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+/* Partner 섹션 */
+.partners{
+    background-image: url(images/partnerbackground.png);
+    position: relative; 
+    background-size: 100%;   
+}
+.partners .container {   
+    width: 100%;
+    height: 252px;
+    
+}
+.partners .container .box-container{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    margin:2% 7%; 
+      
+}
+
+
+.partners .container .box-container p{   
+    width: 33.33333%; 
+    
+}
+.partners .container .box-container .box img{
+    width:80%;
+}
+
+
+.partners p {
+    text-align: center;
+    padding-top: 2%;
+    font-size: 33px;
+    font-weight: bold;
+}
+
+
+
+/* Contact US 섹션 */
+.contactus {
+    text-align: center;
+    position: relative;
+    z-index: 2; /* 푸터 위로 올라오게 */
+}
+
+/* Contact 둘러싸고 있던 박스
+.contactus .container {
+    width: 600px;
+} */
+
+.contactus .contact {
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.contactus .slogan {
+    font-size: 39px;
+    line-height: 2.5;
+}
+
+.contactus .tel {
+    font-size: 29px;
+    line-height: 3rem;
+    /* border: 2px solid #575868;
+    background-color: #fff;
+    padding: 2rem 3rem;
+    margin: 2rem 7rem; */
+}
+
+#email {
+    text-decoration: underline;
+}
+
+/* 푸터 */
+footer {
+    position: relative;
+    top: -10px;
+    z-index: 1; /* 푸터가 contactus 밑으로 깔리게 */
+    height: 210px; /* 야매 */
+}
+
+footer .trapezoid {
+    margin-top: 50px;
+    height: 150px;
+    transform: skewY(-4deg);
+    background-color: #575868;
+}
+
+footer .rectangle {
+    position: relative;
+    margin-top: -80px;
+    /* top: 10px; */
+    height: 150px;
+    background-color: #575868;
+}
+
+footer .copyright {
+    color: #bfc0c1;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 30px;
+}
