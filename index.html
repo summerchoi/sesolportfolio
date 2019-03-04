@@ -1,133 +1,29 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <meta charset="utf-8" />
+        <title>SUMMER.C Design Studio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" href="slidebars.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
 
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Sesol Portfoilo</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
-   
-</head>
+    <body>
+        <div canvas="container">
+    
+            <h4>Right Slidebar Controls</h4>
 
-<body>
-
-    <header>
-        <div class="trapezoid"></div><!-- 사다리꼴 만들기 -->
-        <div class="rectangle"></div><!-- 직사각형 만들기-->
-        <nav>
-            <div class="container">
-                <span><img src="images/whitelogo.png" alt="logo" id="logo"></span>
-                <ul>
-                    <li><a href="#">about</a></li>
-                    <li><a href="#">works</a></li>
-                </ul>
-            </div>
-        </nav>
-
-        <div class="cover-image">
-            <p class="left">The Last Piece you need</p>
-            <div><img src="images/mainsesol.png"></div>
-            <p class="right">UI/UX Design | Branding</p>
+            <p>
+                <button class="js-open-right-slidebar">Open right Slidebar</button>
+            </p>
         </div>
 
-        <div class="container circle">
-            <img src="images/profile.png">
+        <div off-canvas="slidebar-2 right shift">
+            <p>Slidebar with id 'slidebar-2' on the right side and shift style.</p>
         </div>
-    </header>
 
-    <section class="about">
-        <div class="container">
-            <div class="contents">
-                <p>UI/UX Desgin - Branding</p>
-                <div>I majored Busniess Administration at University.<br>
-                    I had worked as international Conference Organizer.<br>
-                    Nowadays I am happy to do UI/UX Design and<br>
-                    Branding as freelancer in Korea.</div>
-            </div>
-            <div class="buttons">
-                <button>More Details</button>
-                <button class="outline">Download CV</button>
-            </div>
-        </div>
-    </section>
-
-    <!-- <section id="works">
-        <div class="container">
-            <div class="tab">
-                <ul>
-                    <li>All</li>
-                    <li>UI/UX</li>
-                    <li>Poster</li>
-                    <li>Caligraphy</li>
-                    <li>Others</li>
-                </ul>
-            </div>
-            <div class="listofworks">
-                <div>
-                    <p>1</p>
-                </div>
-                <div>
-                    <p>2</p>
-                </div>
-                <div>
-                    <p>3</p>
-                </div>
-                <div>
-                    <p>4</p>
-                </div>
-                <div>
-                    <p>5</p>
-                </div>
-                <div>
-                    <p>6</p>
-                </div>
-                <div>
-                    <p>7</p>
-                </div>
-                <div>
-                    <p>8</p>
-                </div>
-                <div>
-                    <button>see more</button>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-    <!-- <section class="partners">
-        <div class="container">
-            <p>Thanks for Partners!</p>
-            <div class="box-container">
-                <p><img src="images/blockonlogo.png"></p>
-                <p class="box"><img src="images/bookquerencialogo.png"></p>
-                <p class="box"><img src="images/bookquerencialogo.png"></p>
-            </div>
-        </div>
-    </section> -->
-
-    <section class="contactus">
-        <div class="container">
-            <div class="contact">
-                Contact
-            </div>
-            <div class="slogan">
-                " The Last Piece you need, Sesol "
-            </div>
-            <div class="tel">
-                <p id="email">hello.summerc@gmail.com</p>
-                <p>010-7446-8698</p>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="trapezoid"></div><!-- 사다리꼴 만들기 -->
-        <div class="rectangle">
-            <span class="copyright">Copyright by Sesol Choi</span>
-        </div><!-- 직사각형 만들기-->
-    </footer>
-</body>
-
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+        <script src="slidebars.js"></script>
+        <script src="scripts.js"></script>
+    </body>
 </html>
