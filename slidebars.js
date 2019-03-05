@@ -23,8 +23,8 @@ var slidebars = function () {
 	// Variables, permitted sides and styles
 	init = false,
 	registered = false,
-	sides = [ 'top', 'right', 'bottom', 'left' ],
-	styles = [ 'reveal', 'push', 'overlay', 'shift' ],
+	sides = [ 'right' ],
+	styles = [ 'shift' ],
 
 	/**
 	 * Get Animation Properties
@@ -37,24 +37,18 @@ var slidebars = function () {
 		duration = parseFloat( offCanvas[ id ].element.css( 'transitionDuration' ), 10 ) * 1000;
 
 		// Elements to animate
-		if ( offCanvas[ id ].style === 'reveal' || offCanvas[ id ].style === 'push' || offCanvas[ id ].style === 'shift' ) {
+		if ( offCanvas[ id ].style === 'shift' ) {
 			elements = elements.add( canvas );
 		}
 
-		if ( offCanvas[ id ].style === 'push' || offCanvas[ id ].style === 'overlay' || offCanvas[ id ].style === 'shift' ) {
+		if ( offCanvas[ id ].style === 'shift' ) {
 			elements = elements.add( offCanvas[ id ].element );
 		}
 
 		// Amount to animate
 		if ( offCanvas[ id ].active ) {
-			if ( offCanvas[ id ].side === 'top' ) {
-				amount = '0px, ' + offCanvas[ id ].element.css( 'height' );
-			} else if ( offCanvas[ id ].side === 'right' ) {
+			if ( offCanvas[ id ].side === 'right' ) {
 				amount = '-' + offCanvas[ id ].element.css( 'width' ) + ', 0px';
-			} else if ( offCanvas[ id ].side === 'bottom' ) {
-				amount = '0px, -' + offCanvas[ id ].element.css( 'height' );
-			} else if ( offCanvas[ id ].side === 'left' ) {
-				amount = offCanvas[ id ].element.css( 'width' ) + ', 0px';
 			}
 		}
 
@@ -187,7 +181,7 @@ var slidebars = function () {
 				}
 
 				// Apply negative margins
-				if ( offCanvas[ id ].style === 'push' || offCanvas[ id ].style === 'overlay' || offCanvas[ id ].style === 'shift' ) {
+				if ( offCanvas[ id ].style === 'shift' ) {
 					offCanvas[ id ].element.css( 'margin-' + offCanvas[ id ].side, '-' + offset );
 				}
 			}
