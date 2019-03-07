@@ -3,9 +3,14 @@
 html * {
    font-family: 'Ubuntu';
 }
-
 body {
     background-color: black;
+}
+::-webkit-scrollbar {
+    display:none;
+}
+.js-close-any-slidebar {
+    opacity: 0.6;
 }
 .container {
     padding: 0 230px;
@@ -19,6 +24,9 @@ body {
 }
 .body-contact {
     background-color: white;
+}
+.body-works {
+    background-color: #eee;
 }
 .contact-deco-line {
     top: -36px;
@@ -61,9 +69,13 @@ body {
 .description {
     position: absolute;
     right: 39px;
+    bottom: 0;
     font-size: 20px !important;
     display: block;
     margin: 37px;
+}
+.black {
+    color: black !important;
 }
 
 h1, h2, h3, h4, h5, h6, p, span {
@@ -115,16 +127,9 @@ nav {
     margin: 0 auto;
     display: block;
 }
-
-.deco-line {
-    z-index: -1;
-    width: 97%;
-    position: fixed;
-    top: 0;
-    transform: rotate(20deg);
-    -webkit-transform-origin-x: left;
-}
 .works {
+    width: 95%;
+    padding: 3%;
     margin-top: 186px;
     font-size: 20px;
     font-weight: normal;
@@ -133,16 +138,48 @@ nav {
     line-height: 1.2;
     letter-spacing: normal;
     text-align: left;
-    color: #ffffff;
 }
-
 .folio {
+    position: relative;
     display: inline-block;
-    width: 427px;
+    width: 21%;
+}
+.folio img {
+    width: 100%;
+}
+.hover-cards {
+    display: none;
+}
+.folio:hover .hover-cards {
+    display: block !important;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 98%;
+    background-color: black;
+    opacity: 0.66;
+    overflow: hidden;
+}
+.hover-cards p {
+    padding: 2% 10%;
+    font-size: 17px;
+}
+.hover-cards p span {
+    font-size: 43px;
+}
+.more {
+    width: 10%;
+    position: relative;
+    display: inline-block;
+}
+.more img {
+    padding: 70% 20%;
+    width: 80px;
 }
 
 [canvas=container]{
     /* padding : 10px 30px; */
+    -ms-overflow-style: none;
 }
 [off-canvas] {
     padding: 254px 111px 20px;
