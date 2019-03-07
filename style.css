@@ -57,6 +57,11 @@ body {
     line-height: 1.16;
     letter-spacing: normal;
 }
+.contact-mail {
+    color: black !important;
+    font-size: 47px;
+    font-weight: normal;
+}
 .contact-mail a, .contact-mail a:hover {
     font-size: 47px;
     color: black;
@@ -67,12 +72,12 @@ body {
     margin-right : 20px;
 }
 .description {
-    position: absolute;
+    float: right;
     right: 39px;
     bottom: 0;
     font-size: 20px !important;
     display: block;
-    margin: 37px;
+    margin: 37px 76px;
 }
 .black {
     color: black !important;
@@ -129,7 +134,7 @@ nav {
 }
 .works {
     width: 95%;
-    padding: 3%;
+    padding: 3% 3% 20%;
     margin-top: 186px;
     font-size: 20px;
     font-weight: normal;
