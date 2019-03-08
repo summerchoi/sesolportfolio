@@ -16,8 +16,10 @@ body {
     padding: 0 230px;
 }
 .body-main {
-    background-image : url('images/background-sea.jpeg');
+    background-image: url(images/background-sea.jpeg);
     background-size: cover;
+    background-blend-mode: overlay;
+    background-color: #7ebee05e;
 }
 .body-main2 {
     background-color: #49b7d1;
