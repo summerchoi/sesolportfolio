@@ -111,6 +111,28 @@ nav {
     top: 35px;
     right: 38px;
 }
+.slide-menu {
+    opacity: 1;
+}
+.slide-link:hover > .about-deco-line1, .slide-link:hover > .about-deco-line2 {
+    background-color: white;
+}
+.about-deco-line1 {
+    left: 54px;
+    height: 4px;
+    width: 375px;
+    background-color: transparent;
+    position: absolute;
+}
+.about-deco-line2 {
+    transform: rotate(42deg);
+    -webkit-transform-origin-x: left;
+    background-color: transparent;
+    height: 4px;
+    width: 84px;
+    position: absolute;
+    left: 368px;
+}
 
 .logo img {
     position: relative;
